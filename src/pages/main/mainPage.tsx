@@ -1,10 +1,12 @@
 import { Header } from '../../components/header/header';
+import { Menu } from '../../components/menu/menu';
 
 export const MainPage = () => (
   <>
     <Header />
-    <section className='main-page'>
-      <div>Main-page</div>
-    </section>
+    <div>
+      <Menu />
+      <div></div>
+    </div>
   </>
 );
