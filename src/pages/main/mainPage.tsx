@@ -7,7 +7,7 @@ export const MainPage = () => (
     <Header />
     <div style={{ display: 'flex', gap: '6px' }}>
       <Menu />
-      <div style={{ width: '75%%' }}>
+      <div style={{ width: '75%' }}>
         <Navigation />
       </div>
     </div>

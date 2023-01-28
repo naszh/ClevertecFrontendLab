@@ -1,15 +1,15 @@
 import { booksCategories } from '../../constants/data';
 import Arrow from '../../assets/imgs/arrow.png';
-import { MenuContainer, ActiveTitle, ArrowIcon, LightText, ListItem, MenuList, MenuTitle } from './menu.styled';
+import { MenuContainer, ArrowIcon, LightText, ListItem, MenuList, MenuItem } from './menu.styled';
 
 export const Menu = () => (
   <MenuContainer>
     <div>
-      <ActiveTitle>
-        Витрина книг
-        <ArrowIcon src={Arrow} />
-      </ActiveTitle>
       <MenuList>
+        <MenuItem>
+          Витрина книг
+          <ArrowIcon src={Arrow} />
+        </MenuItem>
         {booksCategories.map((book) => (
           <ListItem>
             {book.title}
@@ -18,7 +18,7 @@ export const Menu = () => (
         ))}
       </MenuList>
     </div>
-    <MenuTitle>Правила пользования</MenuTitle>
-    <MenuTitle>Договор оферты</MenuTitle>
+    <MenuItem>Правила пользования</MenuItem>
+    <MenuItem>Договор оферты</MenuItem>
   </MenuContainer>
 );
