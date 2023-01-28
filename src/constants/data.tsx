@@ -66,3 +66,30 @@ export const booksCards: any = [
     status: 'Забронирована',
   },
 ];
+
+export const SocialIcons = [
+  {
+    id: 0,
+    link: '',
+    icon: '',
+    name: 'facebook',
+  },
+  {
+    id: 0,
+    link: '',
+    icon: '',
+    name: 'instagram',
+  },
+  {
+    id: 0,
+    link: '',
+    icon: '',
+    name: 'vkonakte',
+  },
+  {
+    id: 0,
+    link: '',
+    icon: '',
+    name: 'linkedin',
+  },
+];
