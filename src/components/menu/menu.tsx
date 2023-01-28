@@ -1,17 +1,14 @@
 import { booksCategories } from '../../constants/data';
-import Arrow from '../../assets/imgs/arrow.png';
-import { MenuContainer, ArrowIcon, LightText, ListItem, MenuList, MenuItem } from './menu.styled';
+import { MenuContainer, LightText, ListItem, MenuList, MenuItem, ArrowUp, ArrowDown } from './menu.styled';
 
 export const Menu = () => (
   <MenuContainer>
     <div>
       <MenuList>
-        <MenuItem>
-          Витрина книг
-          <ArrowIcon src={Arrow} />
-        </MenuItem>
+        <ArrowUp>Витрина книг</ArrowUp>
+        {/* <ArrowDown>Витрина книг</ArrowDown> */}
         {booksCategories.map((book) => (
-          <ListItem>
+          <ListItem key={book.id}>
             {book.title}
             <LightText>{book.count}</LightText>
           </ListItem>

@@ -6,7 +6,9 @@ export const Footer = () => (
     <Text>© 2020-2023 Cleverland. Все права защищены.</Text>
     <IconsList>
       {SocialIcons.map((icon) => (
-        <li>{icon.name}</li>
+        <li key={icon.id}>
+          <img src={icon.icon} alt={`logo of ${icon.name}`} />
+        </li>
       ))}
     </IconsList>
   </Container>

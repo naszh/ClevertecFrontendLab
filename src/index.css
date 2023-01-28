@@ -91,5 +91,5 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 16px;
   height: 16px;
   margin-right: 19px;
-  background-image: url('./assets/imgs/cancel.png');
+  background-image: url('./assets/icons/cancelact.svg');
 }

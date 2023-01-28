@@ -1,5 +1,5 @@
 import Logo from '../../assets/imgs/logo.png';
-import Burger from '../../assets/imgs/burger.png';
+import Burger from '../../assets/icons/menu.svg';
 import Avatar from '../../assets/imgs/avatar.png';
 import { BurgerIcon, HeaderContainer, LogoImg, Profile, ProfileAvatar, Text, Title } from './header.styled';
 

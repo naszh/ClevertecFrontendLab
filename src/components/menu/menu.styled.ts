@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Up from '../../assets/icons/upfocus.svg';
+import Down from '../../assets/icons/downfocus.svg';
 
 export const MenuContainer = styled.nav`
   display: flex;
@@ -19,6 +21,7 @@ export const MenuItem = styled.p`
   padding-bottom: 8px;
   line-height: 28px;
 
+  &:hover,
   &:active {
     background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
     -webkit-background-clip: text;
@@ -29,13 +32,19 @@ export const MenuItem = styled.p`
   }
 `;
 
-export const ArrowIcon = styled.img`
-  display: inline-block;
-  visibility: hidden;
-  margin-left: 82px;
-  vertical-align: middle;
-  &:active {
-    visibility: visible;
+export const ArrowUp = styled(MenuItem)`
+  &:hover::after {
+    content: url(${Up});
+    vertical-align: sub;
+    margin-left: 82px;
+  }
+`;
+
+export const ArrowDown = styled(MenuItem)`
+  &:hover::after {
+    content: url(${Down});
+    vertical-align: sub;
+    margin-left: 82px;
   }
 `;
 

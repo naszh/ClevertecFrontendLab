@@ -10,16 +10,22 @@ export const ContentWrapper = styled.section`
   }
 `;
 
+export const ContentWrapperList = styled(ContentWrapper)`
+  grid-template-columns: auto;
+`;
+
 export const BookCard = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 18px;
+  gap: 18.5px;
   padding: 8px 8px 16px;
   box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
     0px 1px 5px rgba(191, 196, 201, 0.24);
   border-radius: 10px;
 `;
+
+export const BookCardList = styled.article``;
 
 export const CoverBook = styled.img`
   margin: auto;
@@ -28,6 +34,11 @@ export const CoverBook = styled.img`
 export const StarText = styled.p`
   font-weight: 400;
   color: #a7a7a7;
+`;
+
+export const StarContainer = styled.span`
+  display: flex;
+  gap: 8px;
 `;
 
 export const Title = styled.p`
@@ -52,6 +63,7 @@ export const Booked = styled.button`
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
 `;
 
 export const Available = styled(Booked)`

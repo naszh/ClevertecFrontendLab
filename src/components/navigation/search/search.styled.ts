@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Icon from '../../../assets/imgs/search.png';
+import Search from '../../../assets/icons/search.svg';
+import SearchActive from '../../../assets/icons/searchact.svg';
 
 export const SearchInput = styled.input`
   width: 350px;
@@ -36,15 +37,21 @@ export const SearchButton = styled.button`
 
 export const IconContainer = styled.div`
   position: relative;
-  &::before {
-    content: url(${Icon});
+  &::before,
+  &:focus-within::before {
     position: absolute;
     z-index: 1;
     top: 11px;
-    left: 15px;
+    left: 12px;
     @media (max-width: 320px) {
       top: 8px;
       left: 8px;
     }
+  }
+  &::before {
+    content: url(${Search});
+  }
+  &:focus-within::before {
+    content: url(${SearchActive});
   }
 `;
