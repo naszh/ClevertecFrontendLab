@@ -77,3 +77,16 @@ select {
   max-width: 1110px;
   margin: 0 auto;
 }
+
+::placeholder {
+  color: #a7a7a7;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-right: 19px;
+  background-image: url('./assets/imgs/cancel.png');
+}
