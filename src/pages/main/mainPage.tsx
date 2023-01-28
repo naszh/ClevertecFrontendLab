@@ -1,15 +1,18 @@
+import { Content } from '../../components/content/content';
 import { Header } from '../../components/header/header';
 import { Menu } from '../../components/menu/menu';
 import { Navigation } from '../../components/navigation/navigation';
+import { SectionContainer } from './mainPage.styled';
 
 export const MainPage = () => (
   <>
     <Header />
-    <div style={{ display: 'flex', gap: '6px' }}>
+    <main style={{ display: 'flex', gap: '6px' }}>
       <Menu />
-      <div style={{ width: '75%' }}>
+      <SectionContainer>
         <Navigation />
-      </div>
-    </div>
+        <Content />
+      </SectionContainer>
+    </main>
   </>
 );

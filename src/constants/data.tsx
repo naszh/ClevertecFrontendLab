@@ -1,4 +1,5 @@
 import { booksCategoriesType } from './data.types';
+import Book from '../assets/imgs/book.png';
 
 export const booksCategories: Array<booksCategoriesType> = [
   { link: 'all', title: 'Все книги' },
@@ -16,4 +17,52 @@ export const booksCategories: Array<booksCategoriesType> = [
   { link: 'manuals', title: 'Справочники', count: 10 },
   { link: 'fantastic', title: 'Фантастика', count: 12 },
   { link: 'humor', title: 'Юмористическая литература', count: 8 },
+];
+
+export const Stars: any = {
+  null: 'ещё нет оценок',
+  star: '../../assets/imgs/star.png',
+};
+
+export const booksCards: any = [
+  {
+    id: 0,
+    title: 'Грокаем алгоритмы. Иллюстрированное пособие для программирования',
+    cover: Book,
+    stars: Stars,
+    about: 'Адитья Бхаргава, 2019',
+    status: 'Забронировать',
+  },
+  {
+    id: 1,
+    title: 'Грокаем алгоритмы. Иллюстрированное',
+    cover: Book,
+    stars: Stars,
+    about: 'Адитья Бхаргава, 2019',
+    status: 'Забронировать',
+  },
+  {
+    id: 2,
+    title: 'Грокаем алгоритмы.',
+    cover: Book,
+    stars: Stars,
+    about: 'Адитья Бхаргава, 2019',
+    status: 'Занята до 03.05',
+  },
+  {
+    id: 3,
+    title: 'Грокаем алгоритмы.',
+    cover: Book,
+    stars: Stars,
+    about: 'Адитья Бхаргава, 2019',
+    status: 'Забронировать',
+  },
+  {
+    id: 4,
+    title: 'Грокаем алгоритмы. Иллюстрированное',
+    cover: Book,
+    stars: Stars,
+    about: 'Адитья Бхаргава, Патрик Нимайер, 2019',
+    status: 'Забронирована',
+  },
 ];
