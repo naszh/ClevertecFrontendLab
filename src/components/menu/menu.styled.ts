@@ -20,7 +20,18 @@ export const MenuItem = styled.p`
   width: 255px;
   padding-bottom: 8px;
   line-height: 28px;
-
+  border-bottom: 1px solid transparent;
+  &:first-child {
+    border-bottom: 1px solid;
+  }
+  &::after {
+    vertical-align: sub;
+    visibility: hidden;
+  }
+  &:hover::after {
+    visibility: visible;
+    margin-left: 82px;
+  }
   &:hover,
   &:active {
     background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
@@ -33,18 +44,14 @@ export const MenuItem = styled.p`
 `;
 
 export const ArrowUp = styled(MenuItem)`
-  &:hover::after {
+  &::after {
     content: url(${Up});
-    vertical-align: sub;
-    margin-left: 82px;
   }
 `;
 
 export const ArrowDown = styled(MenuItem)`
-  &:hover::after {
+  &::after {
     content: url(${Down});
-    vertical-align: sub;
-    margin-left: 82px;
   }
 `;
 

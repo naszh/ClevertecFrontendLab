@@ -36,6 +36,10 @@ export const ButtonPlate = styled(Button)`
     position: absolute;
     top: 11px;
     right: 11px;
+    @media (max-width: 320px) {
+      top: 8px;
+      right: 8px;
+    }
   }
   &&:active::before {
     content: url(${PlateAct});
@@ -46,8 +50,12 @@ export const ButtonList = styled(Button)`
   &::before {
     content: url(${List});
     position: absolute;
-    top: 10px;
+    top: 9px;
     right: 8px;
+    @media (max-width: 320px) {
+      top: 6px;
+      right: 6px;
+    }
   }
   &&:active::before {
     content: url(${ListAct});

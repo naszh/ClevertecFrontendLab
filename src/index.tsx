@@ -5,6 +5,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import { MainPage } from './pages/main';
 
 import './index.css';
+import { TermsPage } from './pages/terms/termsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
@@ -12,6 +13,8 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path='/' element={<MainPage />} />
+        {/* <Route path='/' element={<TermsPage view='terms' />} /> */}
+        {/* <Route path='/' element={<TermsPage view='contract' />} /> */}
       </Routes>
     </HashRouter>
   </React.StrictMode>

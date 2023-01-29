@@ -12,4 +12,7 @@ export const SectionContainer = styled.section`
     width: 83.3%;
     margin: auto;
   }
+  @media (max-width: 320px) {
+    width: 90%;
+  }
 `;
