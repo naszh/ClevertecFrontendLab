@@ -12,10 +12,11 @@ export const Container = styled.footer`
     margin-left: auto;
     margin-right: auto;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 570px) {
     width: 90%;
     margin-top: 24px;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     padding-bottom: 8px;
   }
