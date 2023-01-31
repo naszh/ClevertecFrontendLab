@@ -25,11 +25,14 @@ export const FilterButton = styled.button`
   &:hover {
     box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
   }
-  @media (max-width: 320px) {
+  @media (max-width: 675px) {
+    width: 38px;
     font-size: 0;
+    padding: 0;
+  }
+  @media (max-width: 320px) {
     width: 32px;
     height: 32px;
-    padding: 0;
   }
 `;
 

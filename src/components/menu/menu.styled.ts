@@ -18,34 +18,23 @@ export const MenuItem = styled.p`
   font-size: 18px;
   font-weight: 700;
   width: 255px;
-  padding-bottom: 8px;
   line-height: 28px;
-  border-bottom: 1px solid transparent;
-  &:first-child {
-    border-bottom: 1px solid;
-  }
-  &::after {
-    vertical-align: sub;
-    visibility: hidden;
-  }
-  &:hover::after {
-    visibility: visible;
-    margin-left: 82px;
-  }
-  &:hover,
-  &:active {
+  &:hover {
     background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%) 1;
   }
 `;
 
 export const ArrowUp = styled(MenuItem)`
+  display: block;
+  position: relative;
   &::after {
     content: url(${Up});
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    visibility: hidden;
   }
 `;
 

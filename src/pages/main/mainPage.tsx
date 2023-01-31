@@ -11,7 +11,6 @@ export const MainPage = () => (
     <MainContainer>
       <Menu />
       <SectionContainer>
-        <Navigation />
         <Content />
       </SectionContainer>
     </MainContainer>

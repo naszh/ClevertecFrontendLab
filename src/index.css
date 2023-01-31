@@ -93,3 +93,27 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: 19px;
   background-image: url('./assets/icons/cancelact.svg');
 }
+
+.active {
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.pas {
+  display: inherit;
+  padding-bottom: 8px;
+  border-bottom: 1px solid;
+}
+
+.pas:hover {
+  border-color: transparent;
+  border-image: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%) 1;
+}
+
+.act {
+  border-color: transparent;
+  border-image: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%) 1;
+}

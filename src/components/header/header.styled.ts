@@ -36,6 +36,9 @@ export const Title = styled.h1`
   @media (max-width: 768px) {
     margin-left: 24px;
   }
+  @media (max-width: 675px) {
+    font-size: 24px;
+  }
   @media (max-width: 320px) {
     font-size: 18px;
   }

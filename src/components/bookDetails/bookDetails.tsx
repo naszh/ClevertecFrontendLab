@@ -28,10 +28,11 @@ import {
   ButtonWidth,
   UserTextWrap,
 } from './bookDetails.styled';
+import NoImg from '../../assets/icons/noimg.svg';
 import BookCover from '../../assets/imgs/bookBig.png';
 import { booksCards, booksCategories, Users } from '../../constants/data';
-import { StarContainer } from '../content/content.styled';
 import { switchCase } from '../content/content';
+import { StarContainer } from '../view/tableView/tableView.styled';
 
 export const BookDetails = () => (
   <BookContainer>
@@ -44,7 +45,11 @@ export const BookDetails = () => (
     </BookAddress>
     <BookInfo>
       <ImageWrap>
-        <ImageCover src={BookCover} alt={`обложка книги ${booksCards[0].title}`} />
+        {booksCards[0].cover ? (
+          <ImageCover src={BookCover} alt={`обложка книги ${booksCards[0].title}`} />
+        ) : (
+          <ImageCover src={NoImg} alt={`обложка книги отсутствует`} />
+        )}
       </ImageWrap>
       <BookAbout>
         <Title>{booksCards[0].title}</Title>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { AvailableList, StarContainer } from '../content/content.styled';
+import { AvailableList } from '../view/listView/listView.styled';
+import { StarContainer } from '../view/tableView/tableView.styled';
 
 export const BookContainer = styled.section`
   display: flex;
@@ -76,6 +77,7 @@ export const ImageWrap = styled.div`
 `;
 
 export const ImageCover = styled.img`
+  height: 594px;
   @media (max-width: 768px) {
     height: 198px;
   }
